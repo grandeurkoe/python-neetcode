@@ -1,6 +1,8 @@
 # Neetcode - Python
 
-My NeetCode 150 Practice Problems Compilation.
+My 🚀 NeetCode 150 Practice Problems Collection with Solutions.
+
+## Introduction
 
 🚀 NeetCode 150 is a meticulously curated selection of 150 LeetCode problems strategically designed to encompass a comprehensive range of patterns and topics in various data structures. This collection is tailored for proficiency in the Python programming language.
 
