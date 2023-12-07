@@ -91,7 +91,7 @@ class LinkedList:
             return True
         
 
-    def getValues(self) -> List[int]:
+    def getValues(self):
         """Get all node values as a list."""
         if self.length == 0:
             return []
@@ -104,3 +104,17 @@ class LinkedList:
             my_list.append(current_node.value)
             return my_list
         
+linkedlist = LinkedList()
+linkedlist.insertHead(1)
+linkedlist.insertHead(2)
+linkedlist.insertTail(3)
+linkedlist.insertTail(4)
+linkedlist.insertHead(5)
+print(f"Node value at index 0: {linkedlist.get(0)}")
+print(f"Node value at index 2: {linkedlist.get(2)}")
+print(f"Node value at index 4: {linkedlist.get(4)}")
+linkedlist.remove(2)
+linkedlist.remove(0)
+linkedlist.insertHead(6)
+linkedlist.insertTail(7)
+print(f"Node values: {linkedlist.getValues()}")
