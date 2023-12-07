@@ -21,3 +21,9 @@ class Solution:
             return True
         else:
             return False
+        
+solution = Solution()
+s = "rat"
+t = "car"
+print(f"\ns = {s}\nt = {t}")
+print(f"Valid Anagram? {solution.isAnagram(s, t)}\n")
