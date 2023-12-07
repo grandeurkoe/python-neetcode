@@ -2,7 +2,7 @@
 # Leetcode Link - https://leetcode.com/problems/contains-duplicate/description/
 
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def containsDuplicate(self, nums) -> bool:
         duplicate_check = {}
         for element in nums:
             if element not in duplicate_check:
@@ -10,3 +10,8 @@ class Solution:
             else:
                 return duplicate_check[element]
         return False
+    
+solution = Solution()
+nums =  [1, 2, 3, 4]
+print(f"\nnums = {nums}")
+print(f"Contains Duplicate? {solution.containsDuplicate(nums)}\n")
