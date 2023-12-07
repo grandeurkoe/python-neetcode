@@ -26,6 +26,7 @@ class DynamicArray:
             self.resize()
         self.array[self.length] = n
         self.length += 1
+        print(f"Push {n}")
 
 
     def popback(self) -> int:
@@ -54,3 +55,17 @@ class DynamicArray:
     def getCapacity(self) -> int:
         """Get array capacity."""
         return self.capacity
+
+arr = DynamicArray(1)
+print(f"Array Size: {arr.getSize()}")
+print(f"Array Capacity: {arr.getCapacity()}")
+arr.pushback(1)
+arr.pushback(2)
+arr.pushback(3)
+print(f"Array Size: {arr.getSize()}")
+print(f"Array Capacity: {arr.getCapacity()}")
+print(f"Pop {arr.popback()}")
+print(f"Pop {arr.popback()}")
+print(f"Pop {arr.popback()}")
+print(f"Array Size: {arr.getSize()}")
+print(f"Array Capacity: {arr.getCapacity()}")
