@@ -12,4 +12,5 @@ class Solution:
 solution = Solution()
 nums = [3, 2, 4]
 target = 6
-print(f"\nTwo Sum: {solution.twoSum(nums, target)}\n")
+print(f"\nnums = {nums}\ntarget = {target}")
+print(f"\nTwo Sum : Index{solution.twoSum(nums, target)}\n")
